@@ -1,0 +1,59 @@
+---
+title: "Flavio Pineda"
+subtitle: "Theoretical Physicist | PhD Candidate"
+toc: false
+about:
+  template: trestles
+  image: profile.jpeg
+  links:
+    - icon: mortarboard-fill 
+      text: "INSPIRE-HEP"
+      href: https://inspirehep.net/authors/2838303
+    # - icon: file-earmark-text-fill 
+    #   text: "Orcid"
+    #   href: https://orcid.org/0000-0002-1265-5229
+    - icon: github 
+      text: GitHub
+      href: https://github.com/fpineda94
+    - icon: file-earmark-pdf
+      text: "CV"
+      href: "CV_Flavio_Pineda.pdf"
+---
+## About Me
+
+I am a theoretical physicist specializing in theoretical cosmology, the physics of the early universe, inflation, and particle production. I am currently interested in exploring the early universe using QFT techniques. This includes, among other things, particle production by gravitational effects, the emission of Primordial Gravitational Waves (PGW), Primordial Black Holes (PBHs) formation, multi-field inflationary models, generation of large non-Gaussianities, dark matter production in the early universe, CMB physics and the exploration of the reheating stage.  I am also into Neutron Stars, Many-Body physics and Statistical Mechanics.
+
+***
+
+## Education
+
+**Universidad Autónoma Metropolitana, Iztapalapa** | Mexico City, Mexico  
+*PhD in Physics* | December 2020 – May 2026 (Expected)
+
+***
+
+
+<!-- ***
+
+## Experience
+
+**Universidad Autónoma Metropolitana, Iztapalapa** | Mexico City, Mexico  
+*PhD in Physics* | December 2020 – May 2026 (Expected)
+
+*** -->
+
+> *We suffer more often in imagination than in reality.*  
+> — Seneca
+
+> *Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.*  
+> — Buddha
+
+
+
+<!-- Currently, I am working on:
+
+* **Non-Gaussianities:** Calculating primordial fluctuations in multi-field models.
+* **Gravitational Particle Production:** Understanding reheating and gravitational effects.
+* **Software:** Developing `primordialpy`, a Python library for cosmological calculations.
+
+I bridge the gap between complex theoretical frameworks and computational implementation. -->

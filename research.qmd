@@ -1,0 +1,39 @@
+---
+title: "Research"
+---
+
+## Overview
+
+My research focuses on **Early Universe Cosmology**, exploring the interplay between **quantum field theory and gravity** in the context of inflation and its observable consequences.
+
+---
+
+## Multi-field Inflation
+
+I study inflationary models involving multiple scalar fields, where the geometry of field space plays a crucial role in the dynamics of perturbations. These models naturally lead to rich phenomenology beyond single-field scenarios.
+
+---
+
+## Primordial Non-Gaussianities
+
+A central aspect of my work is the computation of **non-Gaussian signatures** generated during inflation. These provide a powerful probe of high-energy physics and can be tested through cosmological observations.
+
+---
+
+## Cosmological Collider Physics
+
+I am interested in the idea that inflation acts as a **cosmological collider**, allowing us to probe massive fields and interactions at energy scales far beyond terrestrial experiments.
+
+---
+
+## Primordial Black Holes and Gravitational Waves
+
+I explore the formation of **Primordial Black Holes (PBHs)** from enhanced curvature perturbations, and their associated **gravitational wave signatures**, which may offer observable windows into the early universe.
+
+---
+
+## Computational Tools
+
+Alongside analytical work, I develop computational tools for cosmology, including:
+
+- `primordialpy`: a Python package for numerical calculations in inflationary models

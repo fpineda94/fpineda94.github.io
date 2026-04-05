@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: Flavio Pineda
+  favicon: cmb_favicon.png
+  search: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: lectures.qmd
+        text: Lectures
+      - href: code.qmd
+        text: Code
+    right: 
+      - icon: github
+        href: https://github.com/fpineda94
+      - icon: envelope
+        href: mailto:fpineda@xanum.uam.mx 
+
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    respect-user-color-scheme: true
+    fontsize: 1.1em
+    toc: true
