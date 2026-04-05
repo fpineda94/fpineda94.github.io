@@ -1,5 +1,7 @@
 project:
   type: website
+  resources: 
+    - "CV_Flavio Pineda.pdf"
   output-dir: docs
 
 website:

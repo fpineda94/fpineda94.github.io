@@ -17,7 +17,7 @@ about:
       href: https://github.com/fpineda94
     - icon: file-earmark-pdf
       text: "CV"
-      href: "CV_Flavio_Pineda.pdf"
+      href: "CV_Flavio Pineda.pdf"
 ---
 ## About Me
 

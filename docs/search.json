@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Flavio Pineda",
-    "section": "",
-    "text": "I am a theoretical physicist specializing in theoretical cosmology, the physics of the early universe, inflation, and particle production. I am currently interested in exploring the early universe using QFT techniques. This includes, among other things, particle production by gravitational effects, the emission of Primordial Gravitational Waves (PGW), Primordial Black Holes (PBHs) formation, multi-field inflationary models, generation of large non-Gaussianities, dark matter production in the early universe, CMB physics and the exploration of the reheating stage. I am also into Neutron Stars, Many-Body physics and Statistical Mechanics."
-  },
-  {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Flavio Pineda",
-    "section": "",
-    "text": "I am a theoretical physicist specializing in theoretical cosmology, the physics of the early universe, inflation, and particle production. I am currently interested in exploring the early universe using QFT techniques. This includes, among other things, particle production by gravitational effects, the emission of Primordial Gravitational Waves (PGW), Primordial Black Holes (PBHs) formation, multi-field inflationary models, generation of large non-Gaussianities, dark matter production in the early universe, CMB physics and the exploration of the reheating stage. I am also into Neutron Stars, Many-Body physics and Statistical Mechanics."
-  },
-  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
@@ -63,11 +49,18 @@
     "text": "Computational Tools\nAlongside analytical work, I develop computational tools for cosmology, including:\n\nprimordialpy: a Python package for numerical calculations in inflationary models"
   },
   {
-    "objectID": "index.html#current-projects",
-    "href": "index.html#current-projects",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Flavio Pineda",
-    "section": "Current Projects",
-    "text": "Current Projects\nI am currently focusing on bridging the gap between theoretical frameworks and computational implementation:\n\nNon-Gaussianities: Calculating primordial fluctuations in multi-field models.\nGravitational Particle Production: Investigating reheating and gravitational effects.\nSoftware Development: Developing primordialpy, a Python library for cosmological calculations.\n\n\n\nWe suffer more often in imagination than in reality. &gt; — Seneca\n\n\nDo not dwell in the past, do not dream of the future, concentrate the mind on the present moment. &gt; — Buddha"
+    "section": "",
+    "text": "I am a theoretical physicist specializing in theoretical cosmology, the physics of the early universe, inflation, and particle production. I am currently interested in exploring the early universe using QFT techniques. This includes, among other things, particle production by gravitational effects, the emission of Primordial Gravitational Waves (PGW), Primordial Black Holes (PBHs) formation, multi-field inflationary models, generation of large non-Gaussianities, dark matter production in the early universe, CMB physics and the exploration of the reheating stage. I am also into Neutron Stars, Many-Body physics and Statistical Mechanics."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Flavio Pineda",
+    "section": "",
+    "text": "I am a theoretical physicist specializing in theoretical cosmology, the physics of the early universe, inflation, and particle production. I am currently interested in exploring the early universe using QFT techniques. This includes, among other things, particle production by gravitational effects, the emission of Primordial Gravitational Waves (PGW), Primordial Black Holes (PBHs) formation, multi-field inflationary models, generation of large non-Gaussianities, dark matter production in the early universe, CMB physics and the exploration of the reheating stage. I am also into Neutron Stars, Many-Body physics and Statistical Mechanics."
   },
   {
     "objectID": "index.html#education",
