@@ -2,6 +2,7 @@ project:
   type: website
   resources: 
     - "CV-Flavio_Pineda.pdf"
+    - "CNAME"
   output-dir: docs
 
 website:
