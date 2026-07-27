@@ -4,69 +4,27 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "My research focuses on Early Universe Cosmology, exploring the interplay between quantum field theory and gravity in the context of inflation and its observable consequences."
-  },
-  {
-    "objectID": "research.html#overview",
-    "href": "research.html#overview",
-    "title": "Research",
-    "section": "",
-    "text": "My research focuses on Early Universe Cosmology, exploring the interplay between quantum field theory and gravity in the context of inflation and its observable consequences."
-  },
-  {
-    "objectID": "research.html#multi-field-inflation",
-    "href": "research.html#multi-field-inflation",
-    "title": "Research",
-    "section": "Multi-field Inflation",
-    "text": "Multi-field Inflation\nI study inflationary models involving multiple scalar fields, where the geometry of field space plays a crucial role in the dynamics of perturbations. These models naturally lead to rich phenomenology beyond single-field scenarios."
-  },
-  {
-    "objectID": "research.html#primordial-non-gaussianities",
-    "href": "research.html#primordial-non-gaussianities",
-    "title": "Research",
-    "section": "Primordial Non-Gaussianities",
-    "text": "Primordial Non-Gaussianities\nA central aspect of my work is the computation of non-Gaussian signatures generated during inflation. These provide a powerful probe of high-energy physics and can be tested through cosmological observations."
-  },
-  {
-    "objectID": "research.html#cosmological-collider-physics",
-    "href": "research.html#cosmological-collider-physics",
-    "title": "Research",
-    "section": "Cosmological Collider Physics",
-    "text": "Cosmological Collider Physics\nI am interested in the idea that inflation acts as a cosmological collider, allowing us to probe massive fields and interactions at energy scales far beyond terrestrial experiments."
-  },
-  {
-    "objectID": "research.html#primordial-black-holes-and-gravitational-waves",
-    "href": "research.html#primordial-black-holes-and-gravitational-waves",
-    "title": "Research",
-    "section": "Primordial Black Holes and Gravitational Waves",
-    "text": "Primordial Black Holes and Gravitational Waves\nI explore the formation of Primordial Black Holes (PBHs) from enhanced curvature perturbations, and their associated gravitational wave signatures, which may offer observable windows into the early universe."
-  },
-  {
-    "objectID": "research.html#computational-tools",
-    "href": "research.html#computational-tools",
-    "title": "Research",
-    "section": "Computational Tools",
-    "text": "Computational Tools\nAlongside analytical work, I develop computational tools for cosmology, including:\n\nprimordialpy: a Python package for numerical calculations in inflationary models"
+    "text": "Early Universe Cosmology & High-Energy Physics\n\n\n\n\n01\n\nCosmological Collider Physics & EFT of Inflation\nEmploying the Effective Field Theory (EFT) of Inflation framework to study heavy particle production. We analyze how massive fields \\(\\sigma\\) leave distinct non-Gaussiam signatures in the primordial bispectrum \\(\\mathcal{B}_\\zeta(k_1\\,,k_2\\,,k_3)\\), acting as a cosmological particle collider at energy scales up to \\(H\\sim 10^{14}\\,\\text{GeV}\\).\n\nEFT of inflation Non-Gaussianities Cosmological Collider\n\n\n\n\n\n\n\n\n02\n\nGravitational Particle Production in the Early Universe\nInvestigating non-perturbative particle production induced purely by time-dependent gravitational backgrounds during and after inflation. We study the evolution of the phase space distribution \\(n_k(t)\\) for scalar, fermion, and vector fields, evaluating their contribution to dark matter candidates and primordial relics during preheating.\n\nGravitational production QFT in Curved Spacetime In Progress\n\n\n\n\n\n\n\n\n\n\n\n03\n\nPrimordial Black Holes & Induced Gravitational Waves\nUsing Brownian motion and stochastic formalism in the early Universe to analyze primordial black hole formation from enhanced curvature perturbations and their induced gravitational wave background.\n\nPBHs Gravitational Waves In Progress\n\n\n\n\n\n\n\n\n\n\n\n04\n\nMultifield inflationary models\nInvestigating non-trivial field space dynamics and quantum field theory effects during inflation with multiple scalar fields. We explore turned trajectories, mass hierarchies, and the generation of isocurvature perturbations, evaluating their impact on primordial non-Gaussianities and observational constraints from CMB data on the tensor-to-scalar ratio \\(r\\).\n\nInflation Higgs Observational Constraints"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Flavio Pineda",
     "section": "",
-    "text": "I am a theoretical physicist specializing in theoretical cosmology, the physics of the early universe, inflation, and particle production. I am currently interested in exploring the early universe using QFT techniques. This includes, among other things, particle production by gravitational effects, the emission of Primordial Gravitational Waves (PGW), Primordial Black Holes (PBHs) formation, multi-field inflationary models, generation of large non-Gaussianities, dark matter production in the early universe, CMB physics and the exploration of the reheating stage. I am also into Neutron Stars, Many-Body physics and Statistical Mechanics."
+    "text": "I am a theoretical physicist exploring the high-energy physics of the early Universe. My research lies at the intersection of cosmology and quantum field theory, using QFT techniques in curved spacetimes to bridge the gap between primordial inflation and observational signatures.\nKey areas of my research include:\n\nInflation & Post-Inflationary Dynamics: Multi-field dynamics, non-thermal dark matter production during preheating, and model-building such as Higgs-\\(R^2\\) inflation.\nEffective Field Theories & High-Energy Physics: Applying the EFT of Inflation and Cosmological Collider Physics to search for heavy field signatures in non-Gaussianities.\nCosmological Probes & Relics: Generation of Primordial Gravitational Waves (PGWs) and the mechanisms behind Primordial Black Hole (PBH) formation.\n\nAdditionally, I maintain an active interest in compact objects, focusing on neutron star physics and quantum many-body theory."
   },
   {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
     "title": "Flavio Pineda",
     "section": "",
-    "text": "I am a theoretical physicist specializing in theoretical cosmology, the physics of the early universe, inflation, and particle production. I am currently interested in exploring the early universe using QFT techniques. This includes, among other things, particle production by gravitational effects, the emission of Primordial Gravitational Waves (PGW), Primordial Black Holes (PBHs) formation, multi-field inflationary models, generation of large non-Gaussianities, dark matter production in the early universe, CMB physics and the exploration of the reheating stage. I am also into Neutron Stars, Many-Body physics and Statistical Mechanics."
+    "text": "I am a theoretical physicist exploring the high-energy physics of the early Universe. My research lies at the intersection of cosmology and quantum field theory, using QFT techniques in curved spacetimes to bridge the gap between primordial inflation and observational signatures.\nKey areas of my research include:\n\nInflation & Post-Inflationary Dynamics: Multi-field dynamics, non-thermal dark matter production during preheating, and model-building such as Higgs-\\(R^2\\) inflation.\nEffective Field Theories & High-Energy Physics: Applying the EFT of Inflation and Cosmological Collider Physics to search for heavy field signatures in non-Gaussianities.\nCosmological Probes & Relics: Generation of Primordial Gravitational Waves (PGWs) and the mechanisms behind Primordial Black Hole (PBH) formation.\n\nAdditionally, I maintain an active interest in compact objects, focusing on neutron star physics and quantum many-body theory."
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Flavio Pineda",
     "section": "Education",
-    "text": "Education\nUniversidad Autónoma Metropolitana, Iztapalapa | Mexico City, Mexico\nPhD in Physics | December 2020 – May 2026 (Expected)\n\n\n\nWe suffer more often in imagination than in reality.\n— Seneca\n\n\nDo not dwell in the past, do not dream of the future, concentrate the mind on the present moment.\n— Buddha"
+    "text": "Education\nUniversidad Autónoma Metropolitana, Iztapalapa | Mexico City, Mexico\nPhD in Physics | 2021 – July 2026\n\n\n\nWe suffer more often in imagination than in reality.\n— Seneca\n\n\nDo not dwell in the past, do not dream of the future, concentrate the mind on the present moment.\n— Buddha"
   }
 ]

@@ -1,39 +1,83 @@
 ---
 title: "Research"
+toc: false
 ---
 
-## Overview
-
-My research focuses on **Early Universe Cosmology**, exploring the interplay between **quantum field theory and gravity** in the context of inflation and its observable consequences.
-
----
-
-## Multi-field Inflation
-
-I study inflationary models involving multiple scalar fields, where the geometry of field space plays a crucial role in the dynamics of perturbations. These models naturally lead to rich phenomenology beyond single-field scenarios.
+```{=html}
+<p class="research-subtitle">Early Universe Cosmology &amp; High-Energy Physics</p>
+```
 
 ---
 
-## Primordial Non-Gaussianities
+::: {.project-item}
+::: {.project-grid}
+::: {.project-text}
+<span class="project-number">01</span>
 
-A central aspect of my work is the computation of **non-Gaussian signatures** generated during inflation. These provide a powerful probe of high-energy physics and can be tested through cosmological observations.
+### Cosmological Collider Physics & EFT of Inflation
 
----
+Employing the Effective Field Theory (EFT) of Inflation framework to study heavy particle production. We analyze how massive fields $\sigma$ leave distinct non-Gaussiam signatures in the primordial bispectrum $\mathcal{B}_\zeta(k_1\,,k_2\,,k_3)$, acting as a cosmological particle collider at energy scales up to $H\sim 10^{14}\,\text{GeV}$.
 
-## Cosmological Collider Physics
+::: {.project-tags}
+[EFT of inflation]{.tag} [Non-Gaussianities]{.tag} [Cosmological Collider]{.tag}
+:::
+:::
+:::
+:::
 
-I am interested in the idea that inflation acts as a **cosmological collider**, allowing us to probe massive fields and interactions at energy scales far beyond terrestrial experiments.
+::: {.project-item}
+::: {.project-grid}
+::: {.project-text}
+<span class="project-number">02</span>
 
----
+### Gravitational Particle Production in the Early Universe
 
-## Primordial Black Holes and Gravitational Waves
+Investigating non-perturbative particle production induced purely by time-dependent gravitational backgrounds during and after inflation. We study the evolution of the phase space distribution $n_k(t)$ for scalar, fermion, and vector fields, evaluating their contribution to dark matter candidates and primordial relics during preheating.
 
-I explore the formation of **Primordial Black Holes (PBHs)** from enhanced curvature perturbations, and their associated **gravitational wave signatures**, which may offer observable windows into the early universe.
+::: {.project-tags}
+[Gravitational production]{.tag} [QFT in Curved Spacetime]{.tag} [In Progress]{.tag .tag-active}
+:::
+:::
+::: {.project-image}
+![](relic_abundance_16.png){width="100%"}
+:::
+:::
+:::
 
----
+::: {.project-item}
+::: {.project-grid}
+::: {.project-text}
+<span class="project-number">03</span>
 
-## Computational Tools
+### Primordial Black Holes & Induced Gravitational Waves
 
-Alongside analytical work, I develop computational tools for cosmology, including:
+Using Brownian motion and stochastic formalism in the early Universe to analyze primordial black hole formation from enhanced curvature perturbations and their induced gravitational wave background.
 
-- `primordialpy`: a Python package for numerical calculations in inflationary models
+::: {.project-tags}
+[PBHs]{.tag} [Gravitational Waves]{.tag} [In Progress]{.tag .tag-active}
+:::
+:::
+::: {.project-image}
+![](pbh_diagram.png){width="100%"}
+:::
+:::
+:::
+
+::: {.project-item}
+::: {.project-grid}
+::: {.project-text}
+<span class="project-number">04</span>
+
+### Multifield inflationary models
+
+Investigating non-trivial field space dynamics and quantum field theory effects during inflation with multiple scalar fields. We explore turned trajectories, mass hierarchies, and the generation of isocurvature perturbations, evaluating their impact on primordial non-Gaussianities and observational constraints from CMB data on the tensor-to-scalar ratio $r$.
+
+::: {.project-tags}
+[Inflation]{.tag} [Higgs]{.tag} [Observational Constraints]{.tag}
+:::
+:::
+::: {.project-image}
+![](angular-spectrum.jpg){width="100%"}
+:::
+:::
+:::

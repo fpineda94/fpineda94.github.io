@@ -1,0 +1,127 @@
+/*-- scss:defaults --*/
+$body-bg: #222831;       
+$body-color: #eceff1;   
+$link-color: #00adb5;   
+
+$navbar-bg: #1a1e24;
+$navbar-color: $body-color;
+
+/* Tipografía */
+$font-family-serif: "Playfair Display", Georgia, serif;
+$font-family-sans-serif: "Inter", system-ui, -apple-system, sans-serif;
+
+/*-- scss:rules --*/
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+
+h1, h2, h3, h4 {
+  font-family: $font-family-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+}
+
+/* ─── Research page ─────────────────────────────────── */
+
+.research-subtitle {
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #00adb5;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid #2e3540;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 2rem;
+  align-items: start;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+
+    .project-image {
+      order: -1;
+    }
+  }
+}
+
+.project-text {
+  h3 {
+    font-size: 1.15rem;
+    color: #eceff1;
+    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.35;
+  }
+
+  p {
+    color: #9aa5b4;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.project-number {
+  font-family: 'Inter', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #00adb5;
+}
+
+.project-image {
+  img {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #2e3540;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+/* Tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0.75rem;
+}
+
+.tag {
+  display: inline-block;
+  font-family: $font-family-sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid #2e3540;
+  color: #6b7280;
+  background: transparent;
+
+  &.tag-active {
+    border-color: #00adb5;
+    color: #00adb5;
+  }
+}

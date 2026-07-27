@@ -1,6 +1,6 @@
 ---
 title: "Flavio Pineda"
-subtitle: "Theoretical Physicist | PhD Candidate"
+subtitle: "Theoretical Physicist"
 toc: false
 about:
   template: trestles
@@ -21,14 +21,22 @@ about:
 ---
 ## About Me
 
-I am a theoretical physicist specializing in theoretical cosmology, the physics of the early universe, inflation, and particle production. I am currently interested in exploring the early universe using QFT techniques. This includes, among other things, particle production by gravitational effects, the emission of Primordial Gravitational Waves (PGW), Primordial Black Holes (PBHs) formation, multi-field inflationary models, generation of large non-Gaussianities, dark matter production in the early universe, CMB physics and the exploration of the reheating stage.  I am also into Neutron Stars, Many-Body physics and Statistical Mechanics.
+I am a theoretical physicist exploring the high-energy physics of the early Universe. My research lies at the intersection of cosmology and quantum field theory, using QFT techniques in curved spacetimes to bridge the gap between primordial inflation and observational signatures.
+
+Key areas of my research include:
+
+* **Inflation & Post-Inflationary Dynamics:** Multi-field dynamics, non-thermal dark matter production during preheating, and model-building such as Higgs-$R^2$ inflation.
+* **Effective Field Theories & High-Energy Physics:** Applying the EFT of Inflation and Cosmological Collider Physics to search for heavy field signatures in non-Gaussianities.
+* **Cosmological Probes & Relics:** Generation of Primordial Gravitational Waves (PGWs) and the mechanisms behind Primordial Black Hole (PBH) formation.
+
+Additionally, I maintain an active interest in compact objects, focusing on neutron star physics and quantum many-body theory.
 
 ***
 
 ## Education
 
 **Universidad Autónoma Metropolitana, Iztapalapa** | Mexico City, Mexico  
-*PhD in Physics* | December 2020 – May 2026 (Expected)
+*PhD in Physics* | 2021 – July 2026
 
 ***
 

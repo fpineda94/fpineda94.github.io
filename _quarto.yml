@@ -7,6 +7,7 @@ project:
 
 website:
   title: Flavio Pineda
+  site-url: "https://flaviopineda.com"
   favicon: cmb_favicon.png
   search: true
   navbar:
@@ -27,9 +28,9 @@ website:
 
 format:
   html:
-    theme: 
-      light: flatly
-      dark: darkly
-    respect-user-color-scheme: true
-    fontsize: 1.1em
-    toc: true
+    theme: [cosmo, custom.scss]
+    #   light: flatly
+    #   dark: darkly
+    # respect-user-color-scheme: true
+    # fontsize: 1.1em
+    toc: false

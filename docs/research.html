@@ -38,14 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bcf46f3fd050aaeacae532b87e5445d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-ac52c51026e499eafb846c03b667ad91.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-bcf46f3fd050aaeacae532b87e5445d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-690d2ae9507c93aa1031571d8bc052f1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,181 +70,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -296,7 +150,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -305,23 +158,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#multi-field-inflation" id="toc-multi-field-inflation" class="nav-link" data-scroll-target="#multi-field-inflation">Multi-field Inflation</a></li>
-  <li><a href="#primordial-non-gaussianities" id="toc-primordial-non-gaussianities" class="nav-link" data-scroll-target="#primordial-non-gaussianities">Primordial Non-Gaussianities</a></li>
-  <li><a href="#cosmological-collider-physics" id="toc-cosmological-collider-physics" class="nav-link" data-scroll-target="#cosmological-collider-physics">Cosmological Collider Physics</a></li>
-  <li><a href="#primordial-black-holes-and-gravitational-waves" id="toc-primordial-black-holes-and-gravitational-waves" class="nav-link" data-scroll-target="#primordial-black-holes-and-gravitational-waves">Primordial Black Holes and Gravitational Waves</a></li>
-  <li><a href="#computational-tools" id="toc-computational-tools" class="nav-link" data-scroll-target="#computational-tools">Computational Tools</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
-
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -342,57 +181,79 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>My research focuses on <strong>Early Universe Cosmology</strong>, exploring the interplay between <strong>quantum field theory and gravity</strong> in the context of inflation and its observable consequences.</p>
+<p class="research-subtitle">Early Universe Cosmology &amp; High-Energy Physics</p>
 <hr>
+<div class="project-item">
+<div class="project-grid">
+<div class="project-text">
+<p><span class="project-number">01</span></p>
+<section id="cosmological-collider-physics-eft-of-inflation" class="level3">
+<h3 class="anchored" data-anchor-id="cosmological-collider-physics-eft-of-inflation">Cosmological Collider Physics &amp; EFT of Inflation</h3>
+<p>Employing the Effective Field Theory (EFT) of Inflation framework to study heavy particle production. We analyze how massive fields <span class="math inline">\(\sigma\)</span> leave distinct non-Gaussiam signatures in the primordial bispectrum <span class="math inline">\(\mathcal{B}_\zeta(k_1\,,k_2\,,k_3)\)</span>, acting as a cosmological particle collider at energy scales up to <span class="math inline">\(H\sim 10^{14}\,\text{GeV}\)</span>.</p>
+<div class="project-tags">
+<p><span class="tag">EFT of inflation</span> <span class="tag">Non-Gaussianities</span> <span class="tag">Cosmological Collider</span></p>
+</div>
 </section>
-<section id="multi-field-inflation" class="level2">
-<h2 class="anchored" data-anchor-id="multi-field-inflation">Multi-field Inflation</h2>
-<p>I study inflationary models involving multiple scalar fields, where the geometry of field space plays a crucial role in the dynamics of perturbations. These models naturally lead to rich phenomenology beyond single-field scenarios.</p>
-<hr>
+</div>
+</div>
+</div>
+<div class="project-item">
+<div class="project-grid">
+<div class="project-text">
+<p><span class="project-number">02</span></p>
+<section id="gravitational-particle-production-in-the-early-universe" class="level3">
+<h3 class="anchored" data-anchor-id="gravitational-particle-production-in-the-early-universe">Gravitational Particle Production in the Early Universe</h3>
+<p>Investigating non-perturbative particle production induced purely by time-dependent gravitational backgrounds during and after inflation. We study the evolution of the phase space distribution <span class="math inline">\(n_k(t)\)</span> for scalar, fermion, and vector fields, evaluating their contribution to dark matter candidates and primordial relics during preheating.</p>
+<div class="project-tags">
+<p><span class="tag">Gravitational production</span> <span class="tag">QFT in Curved Spacetime</span> <span class="tag tag-active">In Progress</span></p>
+</div>
 </section>
-<section id="primordial-non-gaussianities" class="level2">
-<h2 class="anchored" data-anchor-id="primordial-non-gaussianities">Primordial Non-Gaussianities</h2>
-<p>A central aspect of my work is the computation of <strong>non-Gaussian signatures</strong> generated during inflation. These provide a powerful probe of high-energy physics and can be tested through cosmological observations.</p>
-<hr>
+</div>
+<div class="project-image">
+<p><img src="relic_abundance_16.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+<div class="project-item">
+<div class="project-grid">
+<div class="project-text">
+<p><span class="project-number">03</span></p>
+<section id="primordial-black-holes-induced-gravitational-waves" class="level3">
+<h3 class="anchored" data-anchor-id="primordial-black-holes-induced-gravitational-waves">Primordial Black Holes &amp; Induced Gravitational Waves</h3>
+<p>Using Brownian motion and stochastic formalism in the early Universe to analyze primordial black hole formation from enhanced curvature perturbations and their induced gravitational wave background.</p>
+<div class="project-tags">
+<p><span class="tag">PBHs</span> <span class="tag">Gravitational Waves</span> <span class="tag tag-active">In Progress</span></p>
+</div>
 </section>
-<section id="cosmological-collider-physics" class="level2">
-<h2 class="anchored" data-anchor-id="cosmological-collider-physics">Cosmological Collider Physics</h2>
-<p>I am interested in the idea that inflation acts as a <strong>cosmological collider</strong>, allowing us to probe massive fields and interactions at energy scales far beyond terrestrial experiments.</p>
-<hr>
+</div>
+<div class="project-image">
+<p><img src="pbh_diagram.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+<div class="project-item">
+<div class="project-grid">
+<div class="project-text">
+<p><span class="project-number">04</span></p>
+<section id="multifield-inflationary-models" class="level3">
+<h3 class="anchored" data-anchor-id="multifield-inflationary-models">Multifield inflationary models</h3>
+<p>Investigating non-trivial field space dynamics and quantum field theory effects during inflation with multiple scalar fields. We explore turned trajectories, mass hierarchies, and the generation of isocurvature perturbations, evaluating their impact on primordial non-Gaussianities and observational constraints from CMB data on the tensor-to-scalar ratio <span class="math inline">\(r\)</span>.</p>
+<div class="project-tags">
+<p><span class="tag">Inflation</span> <span class="tag">Higgs</span> <span class="tag">Observational Constraints</span></p>
+</div>
 </section>
-<section id="primordial-black-holes-and-gravitational-waves" class="level2">
-<h2 class="anchored" data-anchor-id="primordial-black-holes-and-gravitational-waves">Primordial Black Holes and Gravitational Waves</h2>
-<p>I explore the formation of <strong>Primordial Black Holes (PBHs)</strong> from enhanced curvature perturbations, and their associated <strong>gravitational wave signatures</strong>, which may offer observable windows into the early universe.</p>
-<hr>
-</section>
-<section id="computational-tools" class="level2">
-<h2 class="anchored" data-anchor-id="computational-tools">Computational Tools</h2>
-<p>Alongside analytical work, I develop computational tools for cosmology, including:</p>
-<ul>
-<li><code>primordialpy</code>: a Python package for numerical calculations in inflationary models</li>
-</ul>
+</div>
+<div class="project-image">
+<p><img src="angular-spectrum.jpg" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -464,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/flaviopineda\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
